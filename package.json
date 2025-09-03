@@ -1,0 +1,19 @@
+{
+  "name": "patchpilot-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered SaaS to automatically fix and deploy web applications.",
+  "author": "Shahid Shaikh",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "pnpm@8.6.0"
+}
+
